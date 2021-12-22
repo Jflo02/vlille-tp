@@ -11,56 +11,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Vlille</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="d-flex" data-dashlane-rid="44f77ccd676fd836" data-form-type="">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search"
-                        data-dashlane-rid="20c9342cb88b24b2" data-form-type="">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit" data-dashlane-rid="86a257a8eeb0ee6b"
-                        data-dashlane-label="true" data-form-type="">Search</button>
-                </form>
-            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/5/52/Logo-vlille.svg/1200px-Logo-vlille.svg.png" alt="vlille image" width=80px>
         </div>
     </nav>
-    <h1>Bienvenue sur mon application de gestion des V'lille</h1>
-    <p>Je suis dans la branche develop</p>
-    <p id="baliseJS">t</p>
-
     <div class="container">
-        <div class="row">
-            <p>Station recherchée: </p>
+        <div class="row m-3">
+            <p class="m-2">Station recherchée: </p>
             <form>
                 <input id="inputStation" min=3 max=50 />
                 <button type="button" class="btn btn-secondary ml-2" onclick=chercherStation()>Rechercher</button>
@@ -83,10 +39,8 @@
                 </tbody>
             </table>
         </div>
+        <div class="d-flex justify-content-center fixed-bottom m-2 bg-white">© 2021 Florimond Jaulin | Tous droits réservés</div>
     </div>
-
-    <button class="btn btn-small" onclick=buttonClick()>DEBUG</button>
-
 </body>
 
 <script src="node_modules/axios/dist/axios.min.js"></script> 
