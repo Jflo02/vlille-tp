@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Vlille</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,87 +61,35 @@
     <div class="container">
         <div class="row">
             <p>Station recherchée: </p>
-            <input></input>
-            <button type="button" class="btn btn-secondary ml-2">Rechercher</button>
+            <form>
+                <input id="inputStation" min=3 max=50 />
+                <button type="button" class="btn btn-secondary ml-2" onclick=chercherStation()>Rechercher</button>
+            </form>
         </div>
+        <div id="errorMessage" class="alert alert-secondary"></div>
         <div class="row m-4">
-            <table class="table table-hover">
+            <table class="table table-hover" id="tableauVlille">
                 <thead>
                     <tr>
-                        <th scope="col">Type</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
-                        <th scope="col">Column heading</th>
+                        <th scope="col">Commune</th>
+                        <th scope="col">Nom de la station</th>
+                        <th scope="col">En service</th>
+                        <th scope="col">Vélos disponibles</th>
+                        <th scope="col">Places disponibles</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr class="table-active">
-                        <th scope="row">Active</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Default</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-primary">
-                        <th scope="row">Primary</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-secondary">
-                        <th scope="row">Secondary</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-success">
-                        <th scope="row">Success</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-danger">
-                        <th scope="row">Danger</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-warning">
-                        <th scope="row">Warning</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-info">
-                        <th scope="row">Info</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-light">
-                        <th scope="row">Light</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
-                    <tr class="table-dark">
-                        <th scope="row">Dark</th>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                        <td>Column content</td>
-                    </tr>
+                
                 </tbody>
             </table>
         </div>
     </div>
 
+    <button class="btn btn-small" onclick=buttonClick()>DEBUG</button>
+
 </body>
 
+<script src="node_modules/axios/dist/axios.min.js"></script> 
 <script src="js/index.js"></script>
 
 </html>
